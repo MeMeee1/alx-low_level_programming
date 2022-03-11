@@ -1,17 +1,14 @@
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
-/**
- *main - entry point
- *Description: random number in n +ve/-ve
- *Return: 0 on success
- */
+#include <time.h>
+/* more headers goes there */
+
+/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
-	int lastDigit;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	int lastDigit;
 	lastDigit = n % 10;
 	if (lastDigit > 5)
 	{
